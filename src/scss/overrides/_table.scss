@@ -1,0 +1,47 @@
+table {
+  text-align: left;
+  font: $font-medium-normal;
+  letter-spacing: 0;
+  color: $dark;
+  min-width: 600px;
+}
+.table {
+  margin-bottom: 0;
+}
+
+th {
+  font: $font-medium-bold;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+thead > tr:first-child {
+  border-bottom: 2px solid white;
+}
+
+tfoot > tr:first-child {
+  border-top: 2px solid white;
+
+  td {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+th,
+td {
+  vertical-align: middle;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: calc(0.5 * var(--bs-gutter-x)) !important;
+  @include media-breakpoint-down(sm) {
+    padding-left: calc(0.25 * var(--bs-gutter-x)) !important;
+  }
+}
+th:last-child,
+td:last-child {
+  padding-right: calc(0.5 * var(--bs-gutter-x)) !important;
+  @include media-breakpoint-down(sm) {
+    padding-right: calc(0.25 * var(--bs-gutter-x)) !important;
+  }
+}

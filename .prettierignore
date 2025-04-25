@@ -1,0 +1,12 @@
+# Ignore folders:
+/.idea
+/.git
+/.gitignore
+/node_modules
+# Others
+/build
+/coverage
+/dist
+/deploy
+*.yml
+*.yaml

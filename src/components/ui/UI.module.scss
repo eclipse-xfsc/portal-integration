@@ -1,0 +1,193 @@
+@import '../../scss/variables.scss';
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.fill {
+  flex: 1;
+}
+
+.pb-3rem {
+  padding-bottom: 3rem;
+}
+
+.h2-text-container {
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+  p {
+    white-space: break-spaces;
+  }
+}
+
+.image-row {
+  row-gap: 1.5rem;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.image-col-image {
+  object-fit: cover;
+  align-self: center;
+  margin-bottom: 1.5rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.banner-container {
+  justify-content: center;
+  height: 100px;
+  color: white;
+}
+
+.banner-default {
+  background: transparent linear-gradient(92deg, #b900ff 0%, #0d009b 52%, #41ccf8 100%) 0 0 no-repeat padding-box;
+}
+
+.banner-claim-mapping {
+  background: transparent linear-gradient(92deg, #0c1b5a 0%, #811313 100%, #41ccf8 100%) 0 0 no-repeat padding-box;
+}
+
+.banner-article-news {
+  background: transparent linear-gradient(93deg, #2a2a2a 0%, #9b9b9b 100%) 0 0 no-repeat padding-box;
+}
+.banner-did-management {
+  background: transparent linear-gradient(93deg, #0C1B5A 0%, #811313 100%, #41CCF8 100%) 0 0 no-repeat padding-box;
+}
+.banner-notarization-request {
+  background: transparent linear-gradient(93deg, #5A1C0C 0%, #817313 100%, #41CCF8 100%) 0 0 no-repeat padding-box;;
+}
+.banner-service {
+  background: transparent linear-gradient(93deg, #2A2A2A 0%, #9B9B9B 100%) 0 0 no-repeat padding-box;
+}
+
+.line {
+  border-top: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #e9eaea;
+  row-gap: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+.button-add {
+  padding: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+.button-add-image {
+  margin-left: 22px;
+}
+.button-action-image {
+  padding-bottom: 0.25rem;
+}
+.table-buttons-container {
+  column-gap: 1rem;
+  justify-content: end;
+}
+// ----- Buttons -----
+.table-action-button {
+  background-color: transparent !important;
+  border: none !important;
+}
+.white-action-button {
+  background: $white 0 0 no-repeat padding-box !important;
+  border: 1px solid $light-grey !important;
+  border-radius: 4px !important;
+  opacity: 1;
+  width: 32px !important;
+  height: 32px !important;
+}
+.table-action-header {
+  width: auto;
+}
+.modal-button {
+  width: 100%;
+  background: #0c1b5a 0 0 no-repeat padding-box;
+  opacity: 1;
+}
+.grey-button {
+  width: 200px;
+  background: $info-active 0 0 no-repeat padding-box !important;
+  color: $dark !important;
+  opacity: 1;
+  border: none !important;
+}
+// ----- Modal Window Modes -----
+.modal-large {
+  width: 736px !important;
+  @include media-breakpoint-down(md) {
+    width: -webkit-calc(100% - 16px) !important;
+    width: -moz-calc(100% - 16px) !important;
+    width: calc(100% - 16px) !important;
+  }
+}
+
+.modal-article-news {
+  width: 736px !important;
+  @include media-breakpoint-down(md) {
+    width: -webkit-calc(100% - 16px) !important;
+    width: -moz-calc(100% - 16px) !important;
+    width: calc(100% - 16px) !important;
+  }
+}
+.modal-default {
+  width: 498px !important;
+  @include media-breakpoint-down(sm) {
+    width: -webkit-calc(100% - 16px) !important;
+    width: -moz-calc(100% - 16px) !important;
+    width: calc(100% - 16px) !important;
+  }
+}
+.document-link {
+  width: 100%;
+  border: 2px solid $light-grey;
+  border-radius: 4px;
+}
+a.document-link:link {
+  text-decoration: none;
+}
+a.document-link:visited {
+  text-decoration: none;
+}
+a.document-link:hover {
+  text-decoration: none;
+  color: $black !important;
+}
+a.document-link:active {
+  text-decoration: none;
+}
+.document-image {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.tag {
+  background: $dark-blue 0 0 no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+}

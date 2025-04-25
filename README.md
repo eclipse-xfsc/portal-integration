@@ -1,2 +1,15 @@
-# portal-integration
-Service for the integration of xsfc portal
+## Install dependencies
+
+    yarn
+
+## Run
+
+    npm start
+
+## Build
+
+    DISABLE_ESLINT_PLUGIN=true npm run build
+
+## Check and format all files with pretier
+
+    yarn prettier --write .

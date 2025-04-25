@@ -1,0 +1,32 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.register-principal-container {
+  padding-bottom: 3rem;
+}
+.register-principal-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+
+  row-gap: 1rem;
+}
+
+.register-principal-card {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  row-gap: 0;
+
+  div:has(svg) {
+    align-self: center;
+  }
+}
+.register-principal-card-row {
+  row-gap: 1rem;
+}
+
+.role-line-container {
+  margin-top: 2rem;
+}

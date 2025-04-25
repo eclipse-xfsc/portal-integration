@@ -1,0 +1,145 @@
+@import './_variables';
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+@import './overrides/_table';
+@import './overrides/_table_light_grey';
+@import './overrides/_dropdown';
+@import './overrides/_carousel';
+@import './overrides/_navbar';
+@import './overrides/_form-control';
+@import './overrides/_form-select';
+@import './overrides/_labels';
+@import './overrides/_modal';
+@import './_breakpoint-utils';
+@import './overrides/_offcanvas';
+@import './_spacing-utils';
+@import './_position-utils';
+@import './_font-utils';
+
+.App {
+  text-align: center;
+}
+
+html,
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#content,
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 !important;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $primary;
+  margin: 0;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: $primary;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: $dark;
+  margin: 0;
+}
+
+.fill {
+  flex: 1;
+}
+
+.btn {
+  font-size: 18px !important;
+  border-radius: 4px;
+  padding: 0.6rem 2.25rem;
+}
+.btn-dark:disabled {
+  background: $light-grey 0 0 no-repeat padding-box;
+  border: 1px solid $table-border-color;
+}
+.btn-sm {
+  font-size: 18px !important;
+  border-radius: 4px;
+  padding: 0.1rem 2.25rem;
+}
+.btn-outline-info {
+  background-color: $info-active;
+  color: $dark;
+  border: none;
+}
+
+.btn-outline-info:hover {
+  color: $dark !important;
+  background-color: #2a2a2a33 !important;
+}
+
+.btn-check:checked + .btn:hover {
+  color: white !important;
+  background-color: #ba00ffcc !important;
+}
+
+.cancel-padding {
+  border-radius: 0;
+  padding: 0;
+  height: 50px;
+}
+
+.container,
+.container-fluid {
+  @include media-breakpoint-down(sm) {
+    padding-left: calc(0.25 * var(--bs-gutter-x));
+    padding-right: calc(0.25 * var(--bs-gutter-x));
+  }
+}
+
+.row {
+  @include media-breakpoint-down(sm) {
+    margin-left: calc(-0.25 * var(--bs-gutter-x));
+    margin-right: calc(-0.25 * var(--bs-gutter-x));
+    > * {
+      padding-left: calc(0.25 * var(--bs-gutter-x));
+      padding-right: calc(0.25 * var(--bs-gutter-x));
+    }
+  }
+}
+
+.line {
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+
+  @include media-breakpoint-down(sm) {
+    margin-left: calc(-0.25 * var(--bs-gutter-x));
+    margin-right: calc(-0.25 * var(--bs-gutter-x));
+  }
+}
+.background-medium-light-grey {
+  background: $medium-light-grey 0 0 no-repeat padding-box;
+}
+.background-grey {
+  background: $grey 0 0 no-repeat padding-box;
+}
+.rotate-left {
+  transform: matrix(0, 1, -1, 0, -3, 0);
+}
+.rotate-right {
+  transform: matrix(0, -1, 1, 0, 3, 0);
+}

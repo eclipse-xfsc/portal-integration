@@ -1,0 +1,35 @@
+$spacingUnit: 8px;
+$remUnit: 1rem;
+
+@for $i from 1 through 8 {
+  .mb-#{$i} {
+    margin-bottom:$i * $spacingUnit !important;
+  }
+  .mt-#{$i} {
+    margin-top:$i * $spacingUnit !important;
+  }
+  .ml-#{$i} {
+    margin-left:$i * $spacingUnit !important;
+  }
+  .mr-#{$i} {
+    margin-right:$i * $spacingUnit !important;
+  }
+  .pb-#{$i} {
+    padding-bottom:$i * $spacingUnit !important;
+  }
+  .pt-#{$i} {
+    padding-top:$i * $spacingUnit !important;
+  }
+  .pl-#{$i} {
+    padding-left:$i * $spacingUnit !important;
+  }
+  .pr-#{$i} {
+    padding-right:$i * $spacingUnit !important;
+  }
+  .row-gap-#{$i} {
+    row-gap:$i * $remUnit !important;
+  }
+}
+.white-top-border {
+  border-top: 2px solid white;
+}

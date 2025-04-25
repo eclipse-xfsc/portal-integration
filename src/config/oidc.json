@@ -1,0 +1,10 @@
+{
+  "authority": "https://auth-server.gxfs.dev/",
+  "client_id": "gxfs-hmi-demo",
+  "client_secret": "hmi-secret",
+  "redirect_uri": "http://127.0.0.1:3000",
+  "scope": "profile openid",
+  "response_type": "code",
+  "loadUserInfo": false,
+  "client_authentication": "client_secret_basic"
+}

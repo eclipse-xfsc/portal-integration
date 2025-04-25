@@ -1,0 +1,9 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.offcanvas,
+.offcanvas-md,
+.offcanvas-backdrop {
+  margin-top: 50px;
+}

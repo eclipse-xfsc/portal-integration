@@ -1,0 +1,11 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.row-gab-2rem {
+  row-gap: 2rem;
+}
+
+.row-gab-1rem {
+  row-gap: 1rem;
+}

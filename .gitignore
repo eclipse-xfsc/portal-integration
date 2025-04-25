@@ -1,0 +1,9 @@
+
+node_modules
+
+yarn.lock
+
+/build
+deploy/docker/output/build/
+
+setupProxy.js

@@ -1,0 +1,13 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.content {
+  @include media-breakpoint-up(xl) {
+    width: 960px;
+    margin: auto;
+  }
+}
+.table-buttons-container {
+  float: right;
+}

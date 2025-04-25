@@ -1,0 +1,19 @@
+.register-container {
+  padding-bottom: 3rem;
+}
+.register-container-login {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+
+  row-gap: 1rem;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  button {
+    width: fit-content;
+  }
+}

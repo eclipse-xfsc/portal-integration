@@ -1,0 +1,39 @@
+@import '../../../node_modules/bootstrap/scss/mixins';
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+.ftu-step-container {
+  flex-direction: row;
+  column-gap: 2rem;
+  span {
+    font: normal normal 600 45px/60px Titillium Web;
+    color: #ba00ff;
+  }
+}
+
+.ftu-step-content-container {
+  p {
+    display: flex;
+    white-space: break-spaces;
+  }
+}
+.lite {
+  @include media-breakpoint-up(md) {
+    min-height: 50vh;
+  }
+}
+.ftu-content-qr-code-container {
+  row-gap: 2rem;
+
+  @include media-breakpoint-up(sm) {
+    flex-direction: row;
+  }
+}
+
+.ftu-qr-code-container {
+  p {
+    font: normal normal normal 14px/21px Titillium Web;
+    letter-spacing: 0px;
+    height: unset;
+  }
+}
